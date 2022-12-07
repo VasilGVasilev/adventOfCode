@@ -16,13 +16,13 @@ inputs = inputs.map((e)=>{
     
 })
 
-let resultStr = '';
+let resStr = '';
 for (let key in stacks){
     let letter = stacks[key].slice(-1);
     resultStr += letter
 }
 
-console.log(resultStr);
+console.log(resStr);
 
 function eachRestack(stacks, fromStack, toStack, itemsMoved){
     let manipulatedStack = stacks[fromStack].split('');
